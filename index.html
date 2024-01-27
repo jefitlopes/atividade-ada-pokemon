@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/script.js"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Pesquisa Pokemon</title>
+</head>
+<body>
+    <form id="pokemonForm">
+			<input
+				type="text"
+				id="pokemonInput"
+				placeholder="Digite o nome do Pokémon"
+			/>
+			<button type="submit">Pesquisar</button>
+			<button type="button" onclick="clearSearch()">Limpar</button>
+		</form>
+		<div id="pokemonResult" class="hidden">
+			<img id="pokemonImage" class="hidden" />
+			<div>
+				<span id="pokemonName"></span>
+				<span id="pokemonHeight"></span>
+				<span id="pokemonWeight"></span>
+			</div>
+		</div>
+		<div id="pokemonList"></div>
+        <script src="./src/script.js"></script>
+</body>
+</html>
